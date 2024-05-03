@@ -76,6 +76,23 @@ export default {
         </div>
       </section>
     </main>
+    <footer>
+    <section id="menu">
+            <div id="Github">
+                <a href="https://github.com/"><img src="./assets/logos/Github.png" alt="Logo github"></a>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><img src="./assets/logos/linkedin.png" alt="logo linkedin"></a>
+            </div>
+            <div id="Discord">
+                <a href="Discord"><img src="./assets/logos/discod.png" alt="logo discord"></a>
+            </div>
+            <div id="Contact">
+                <a href="Mailto:s.desray@gmail.com"><img src="./assets/logos/mail.jpg" alt="contact"></a>
+            </div>
+            <p><small>Mis a jour le 26/04/2024</small></p>
+    </section>
+    </footer>
   </body>
 
   <RouterView />
