@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Joyful Easter";
+  src: url("./fonts/Joyful\ Easter.ttf");
+  src: url("./fonts/Joyful-Easter.woff") format("truetype"),
+  url("./fonts/Joyful-Easter.woff") format("opentype");
+}
+
+body {
+  background-image: url("./images/fondportfolio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin: 0 auto;
+  font-family:"Joyful Easter",serif;
+  font-size: 25px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: whitesmoke;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
