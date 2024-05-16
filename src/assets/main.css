@@ -21,6 +21,22 @@ body {
   text-align: center;
 }
 
+p {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
+  margin: 60px;
+}
+
+
+#logo-mobil {
+  display: flex;
+  position:fixed;
+  
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -43,11 +59,12 @@ a {
   margin: auto;
   font-size: 30px;
   font-weight: bold;
-  padding: 10%;
+  padding: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
 
 }
+
 
 #menu {
   display: flex;
@@ -68,5 +85,5 @@ a {
   width: 50px;
   height: 50px;
   margin: 10px;
-  border-radius: 20%;
+  border-radius: 50%;
 }

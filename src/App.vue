@@ -3,13 +3,15 @@ import { RouterLink, RouterView } from 'vue-router'
 import Contenu from './components/Contenu.vue';
 import Contenub from './components/Contenub.vue';
 
+
 export default {
   name: 'App',
   components: {
     'contenu': Contenu,
     'contenub': Contenub
       }
-  }
+}
+
 
   
 </script>
@@ -17,15 +19,21 @@ export default {
 <template>
   <body>
     <header>
+      <div id="title">
       <h1>PORTFOLIO DEVELOPPEUR DESRAY STEPHANE</h1>
+      </div>
     <nav>
       <a href="#A-propos">A propos</a>
       <a href="#Créations">Créations</a>
       <a href="#Contact">Contact</a>
     </nav>
-    <p>Jeune Developpeur en formation fullstack au Centre Européen de Formation.
-            J'ai commencé a me former en juin et peut donc adapter mon apprentissage en fonction des technologie demander par une entreprise qui souhaiterait recrutée un developpeur tres motivé.
-            Je suis passionné par le developpement web et je souhaite en faire mon métier.
+    <div id="logo-mobil">
+    <a href="#title"><img src="../src/assets/logos/go-up-5.webp" alt="accueil"></a>
+    </div>
+    <p>Actuellement, je suis un développeur web en formation full-stack au Centre Européen de Formation.
+      J'ai entrepris cette formation en juin dernier, ce qui me donne la flexibilité d'adapter mon apprentissage 
+      en fonction des technologies spécifiques réclamées par une entreprise à la recherche d'un développeur enthousiaste
+      et motivé. J'ai toujours eu pour ambition de devenir développeur web, et c'est avec passion que je poursuis ce but.
     </p>
     </header>
 
