@@ -33,6 +33,7 @@
 
 
 <style>
+
 #buttonModale {
     display: flex;
     justify-content: center;
@@ -47,9 +48,11 @@
 img {
     transition: box-shadow 0.7s;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 100%;
 }
 
 img:hover {

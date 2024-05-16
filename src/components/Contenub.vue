@@ -50,8 +50,8 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 20%;
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
 }
 
 img:hover {
