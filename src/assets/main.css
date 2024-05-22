@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "Joyful Easter";
-  src: url("./fonts/Joyful\ Easter.ttf");
-  src: url("./fonts/Joyful-Easter.woff") format("truetype"),
-  url("./fonts/Joyful-Easter.woff") format("opentype");
+  font-family: "animeace2";
+  src: url("./fonts/animeace2_bld.woff");
+  src: url("./fonts/animeace2_bld.ttf") format("truetype"),
+  url("./fonts/animeace2_bld.otf") format("opentype");
 }
 
 body {
@@ -15,10 +15,14 @@ body {
   flex-direction: column;
   justify-content:space-around;
   margin: 0 auto;
-  font-family:"Joyful Easter",serif;
-  font-size: 25px;
+  font-family:"animeace2",serif;
+  font-size: 15px;
   color: whitesmoke;
   text-align: center;
+}
+
+#logo-mobil {
+  position: fixed;
 }
 
 p {
@@ -26,24 +30,20 @@ p {
   justify-content: space-around;
   align-content: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin: 60px;
 }
 
 
-#logo-mobil {
-  display: flex;
-  position:fixed;
-  
-}
 
 h1 {
-  display: flex;
+  display: inherit;
   justify-content: center;
   align-content: center;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   margin: 0 auto;
+  text-shadow: 2px 2px 2px black;
 }
 
 nav {
@@ -57,7 +57,6 @@ a {
   text-decoration: none;
   color: whitesmoke;
   margin: auto;
-  font-size: 30px;
   font-weight: bold;
   padding: 20px;
   padding-top: 5px;
@@ -65,6 +64,43 @@ a {
 
 }
 
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content:space-around;
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+form input {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color:whitesmoke;
+}
+
+textarea {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: whitesmoke;
+}
 
 #menu {
   display: flex;
@@ -76,6 +112,11 @@ a {
   margin: 0 auto;
   width: auto;
   height: auto;
+  background: transparent;
+}
+
+#menu p {
+  font-size:smaller;
 }
 
 #menu img {
@@ -85,5 +126,5 @@ a {
   width: 50px;
   height: 50px;
   margin: 10px;
-  border-radius: 50%;
+  border-radius: 80%;
 }
