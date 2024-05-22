@@ -4,13 +4,20 @@ import Contenu from './components/Contenu.vue';
 import Contenub from './components/Contenub.vue';
 
 
+
 export default {
   name: 'App',
   components: {
     'contenu': Contenu,
     'contenub': Contenub
+      },
+      data() {
+        return {
+          showForm: false
+        }
       }
 }
+  
 
 
   
@@ -54,51 +61,36 @@ export default {
     </section>
 
     <section id="Contact">
-      <div class="contactez-nous">
-            <h3>Contactez-moi</h3>
-            <p>Un problème, une question, envie de m'envoyer un message sympa ?<br/>N hésitez pas à utiliser ce formulaire pour prendre contact avec moi !</p>
+      <h2 @click="showForm = !showForm">Formulaire de Contact</h2>
 
-        </div>
-        <div>
-            <label for="nom">Votre nom</label>
-            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-            
-        </div>
-        <div>
-            <label for="email">Votre e-mail</label>
-            <input type="email" id="email" placeholder="monadresse@mail.com" autocomplete="email" required>
-        </div>
-        <div>
-            <label for="sujet">Quel est le sujet de votre message ?</label>
-            <select name="sujet" id="sujet" required>
-                <option value="sujet message" disabled selected hidden>Choisissez le sujet de votre message</option>
-                <option value="contact proffessionnel">contact proffessionnel</option>
-                <option value="probleme-technique">Problème technique</option>
-                <option value="autre">Autre...</option>
-            </select>
-        </div>
-        <div>
-            <label for="message">Votre message</label>
-            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
-            <button v-on:click="" type="submit">Envoyer</button>
-        </div>
-      </section>
+    <form v-if="showForm" action="/submit_form" method="post">
+        <label for="fname">Prénom:</label><br>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Nom:</label><br>
+        <input type="text" id="lname" name="lname">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" cols="40"></textarea><br>
+        <input type="submit" value="Envoyer">
+    </form>
+    </section>
     </main>
     <footer>
     <section id="menu">
             <div id="Github">
-                <a href="https://github.com/"><img src="./assets/logos/Github.png" alt="Logo github"></a>
+                <a href="https://github.com/" target="_blank"><img src="./assets/logos/Github.png" alt="Logo github"></a>
             </div>
             <div id="linkedin">
-                <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><img src="./assets/logos/linkedin.png" alt="logo linkedin"></a>
+                <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank"><img src="./assets/logos/linkedin.png" alt="logo linkedin"></a>
             </div>
             <div id="Discord">
-                <a href="Discord"><img src="./assets/logos/discod.png" alt="logo discord"></a>
+                <a href="Discord" target="_blank"><img src="./assets/logos/discord.png" alt="logo discord"></a>
             </div>
             <div id="Contact">
-                <a href="Mailto:s.desray@gmail.com"><img src="./assets/logos/mail.jpg" alt="contact"></a>
+                <a href="Mailto:s.desray@gmail.com" target="_blank"><img src="./assets/logos/mail.jpg" alt="contact"></a>
             </div>
-            <p><small>Mis a jour le 26/04/2024</small></p>
+            <p><small>Mis a jour le 21/05/2024</small></p>
     </section>
     </footer>
   </body>
@@ -106,6 +98,6 @@ export default {
   <RouterView />
 </template>
 
-<style scoped>
+<style>
 
 </style>
