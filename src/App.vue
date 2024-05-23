@@ -84,9 +84,6 @@ export default {
             <div id="linkedin">
                 <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank"><img src="./assets/logos/linkedin.png" alt="logo linkedin"></a>
             </div>
-            <div id="Discord">
-                <a href="Discord" target="_blank"><img src="./assets/logos/discord.png" alt="logo discord"></a>
-            </div>
             <div id="Contact">
                 <a href="Mailto:s.desray@gmail.com" target="_blank"><img src="./assets/logos/mail.jpg" alt="contact"></a>
             </div>
